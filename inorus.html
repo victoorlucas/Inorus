@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inorus Dashboard</title>
+    <link rel="stylesheet" href="minified-files/inorus-dash.min.css">
+
+</head>
+<body>
+    <div class="top">
+        <h1 class="logo"></h1>
+    </div>
+
+    <div class="content">
+
+        <div class="content">
+
+        <div class="firstStep">
+            <strong>Selecione uma língua base para começar uma nova tradução</strong>
+            <select class="language"  id="language" style="margin-top: 5px;"></select>
+        </div>
+
+        <br><hr><br>
+
+        <div class="otherSteps" style="display: block;">
+            <h4 id="textToTranslate"></h4>
+            <small><i id="textConfig"></i></small>
+
+            <br /><br />
+
+            <span>Digite uma tradução para o elemento acima</span>
+            <textarea class="elementText" id="textTranslated"></textarea>
+            <button class="next" id="buttonTranslate">Próximo</button>
+        </div>
+
+        <div class="lastStep" style="display:none;">
+            <h3>
+                Sua nova língua está quase pronta, apenas dê um nome para ela. <br />
+                <small style="font-weight: normal;">Recomendamos uma abreviação, exemplo: PT</small>
+            </h3>
+            <input type="text" class="elementName" id="languageName"/>
+            <button class="next" id="finish">Concluir</button>
+        </div>
+
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+        <!--
+            ARQUIVO DE CONFIGURAÇÃO DO FIREBASE
+            <script src="config.js"></script>
+        -->
+        <script src="minified-files/inorus-dash.min.js"></script>
+
+</body>
+</html>
